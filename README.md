@@ -31,15 +31,11 @@ Getting started is super easy! Just follow the tutorial below:
 - 🪟 Full Windows 11 experience  
 - 🌐 Remote access from any device  
 - 🧩 Simple and lightweight setup  
-- 🔧 No complex configurations needed  
+- 🔧 complex configurations needed  
 
 ---
 
-## 🧑‍💻 Usage
 
-1. Follow the video tutorial above.  
-2. Launch your RDP session.  
-3. Enjoy seamless Windows 11 experience with lightning-fast internet.  
 
 ---
 
