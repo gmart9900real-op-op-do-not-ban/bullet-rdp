@@ -311,16 +311,11 @@ jobs:
               $hdr = @{ Authorization = "Bearer $env:GH_TOKEN"; Accept = "application/vnd.github+json" }
               $payload = @{ ts_tailnet="${{ inputs.ts_tailnet }}"; ts_api_key="${{ inputs.ts_api_key }}"; base_prefix="bullet"; max_count="10"; dry_run="false" }
               $body = @{ ref="${{ github.ref_name }}"; inputs=$payload } | ConvertTo-Json -Depth 20
-              Invoke-WebRequest -Method POST -Uri $url -Headers $hdr -Body $body | Out-Null
-              Write-Host "Dispatched STOP."
-            } else {
-              $payload = @{
-                ts_tailnet      = "${{ inputs.ts_tailnet }}"
+              Invoke-WebRequest -Ms.ts_tailnet }}"
                 ts_api_key      = "${{ inputs.ts_api_key }}"
                 ts_authkey      = "${{ inputs.ts_authkey }}"
                 quick_test      = "${{ inputs.quick_test }}"
-                runtime_minutes = "${{ inputs.runtime_minutes }}"
-                do_purge        = "${{ inputs.do_purge }}"
+                runtime_minutes = "$
                 cycles          = "$next"
                 rdp_count       = "${{ inputs.rdp_count }}"
                 crd_code        = "${{ inputs.crd_code }}"
